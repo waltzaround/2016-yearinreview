@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+        <style type="text/css">
+            .title-font {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 900;
+                font-size: 50px;
+            }
+
+            .white-text {
+                color: white;
+            }
+
+            .subtitle-font {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 40px;
+            }
+
+            .center-text {
+                text-align: center;
+            }
+
+            .center-element {
+                display:block;
+                margin: 0 auto;
+            }
+
+            .next-button {
+                width: 200px;
+                height: 60px;
+                background-color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                font-weight: 500;
+                color: black;
+                border: none;
+            }
+
+            #main-layer {
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                z-index:1;
+            }
+
+            #main-content-container {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                height:100%;
+                width: 100%;
+                min-width: 200px;
+            }
+
+            #secondary-content-container {
+                position: absolute;
+                left: 50%;
+                height:100%;
+                width: 50%;
+                background-color: #000000;
+                opacity: 0.8;
+                z-index: 2;
+            }
+
+            #secondary-content-text-container {
+                position: absolute;
+                left: 50%;
+                height:100%;
+                width: 50%;
+                z-index: 10;
+            }
+
+            #main-background-video {
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            #main-start-button {
+                margin-top: 20px;
+            }
+
+            #main-title {
+
+                margin-top: 60px;
+                margin-left: 60px;
+
+
+                font-family: 'Poppins', sans-serif;
+                font-weight: 900;
+                font-size: 70px;
+                color: white;
+                opacity: 1;
+                z-index: 4;
+                position: absolute;
+            }
+
+            #main-body-content {
+
+
+                margin-top: 180px;
+                margin-left: 60px;
+                margin-right: 60px;
+
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
+
+                z-index: 4;
+                position: absolute;
+            }
+
+            .main-stat {
+
+                top: 20px;
+                margin-top: 60px;
+                margin-left: 60px;
+                margin-right: 60px;
+
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 60px;
+                color: white;
+                position: relative;
+                z-index: 4;
+                position: RELATIVE;
+
+            }
+
+            .secondary-stat {
+
+
+                margin-top: 5px;
+                margin-left: 60px;
+                margin-right: 60px;
+
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
+
+                z-index: 4;
+
+            }
+
+            .stat {
+                float: right;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <iframe id="main-background-video" src="https://www.youtube.com/embed/i1WXEI1Wteg?loop=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <div id="main-layer">
+            <div id="main-content-container" class="center-element">
+                <div id="secondary-content-text-container">
+                    <div id="main-title">Syria</div>
+                    <div id="main-body-content">The Syrian Civil War (Arabic: الحرب الأهلية السورية‎‎, Al-ḥarb al-ʼahliyyah as-sūriyyah) grew out of the unrest of the 2011 Arab Spring and escalated to armed conflict after President Bashar al-Assad's government violently repressed protests calling for his removal.<br><br>The conflict continues to this day.</div>
+                    <div id="main-stat-1" class="main-stat">470,000+</div>
+                    <div class="secondary-stat">Dead</div>
+                    <div id="main-stat-2" class="main-stat stat">1,000,000+</div>
+                    <div class="secondary-stat">Displaced</div>
+                    <div id="main-stat-3" class="main-stat">6th Year</div>
+                    <div class="secondary-stat">Of Conflict</div>
+                </div>
+                <div id="secondary-content-container"></div>
+
+            </div>
+        </div>
+    </body>
+</html>
