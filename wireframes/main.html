@@ -1,11 +1,81 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+        <style type="text/css">
+            .title-font {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 900;
+                font-size: 50px;
+            }
+
+            .white-text {
+                color: white;
+            }
+
+            .subtitle-font {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 40px;
+            }
+
+            .center-text {
+                text-align: center;
+            }
+
+            .center-element {
+                display:block;
+                margin: 0 auto;
+            }
+
+            .next-button {
+                width: 200px;
+                height: 60px;
+                background-color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                font-weight: 500;
+                color: black;
+                border: none;
+            }
+
+            #main-layer {
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                z-index:1;
+            }
+
+            #main-content-container {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                height:100%;
+                width: 60%;
+                min-width: 200px;
+            }
+
+            #main-background-video {
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            #main-start-button {
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body>
-        <div>
-            DID WE FUCK UP 2016?
+        <iframe id="main-background-video" src="https://www.youtube.com/embed/YEtxp_XZesw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <div id="main-layer">
+            <div id="main-content-container" class="center-element">
+                <div class="title-font center-text white-text">
+                    Did We Fuck Up 2016?
+                </div>
+                <div class="subtitle-font center-text white-text">A Year In Review</div>
+                <button id="main-start-button" class="next-button center-element">Start</button>
+            </div>
         </div>
-        <div>A year in review</div>
-        <button>START</button>
     </body>
 </html>
