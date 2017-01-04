@@ -1,0 +1,68 @@
+#main-layer {
+    top: 0;
+    width: 100%;
+    height: calc(100% - 35px);
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    z-index:5;
+}
+
+#syria-background-mask {
+    margin-left:50%;
+    height: 100%;
+    width: 50%;
+    opacity: 0.5;
+    background-color:black;
+    position: absolute;
+    z-index: 2;
+}
+
+#main-content-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    width: 50%;
+    margin-left: 50%;
+    min-width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#secondary-content-container {
+    position: absolute;
+    left: 50%;
+    height:100%;
+    width: 50%;
+    background-color: #000000;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+#main-background-video {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#main-start-button {
+    margin-top: 20px;
+}
+
+#main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    color: white;
+    opacity: 1;
+    z-index: 4;
+}
+
+#main-body-content {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
